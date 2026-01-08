@@ -4686,18 +4686,23 @@ input, select, textarea {
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
-		/* Academic profile photo in intro */
-        #intro .image.avatar {
-           display: block;
-           margin: 0 auto 2rem auto;
-           width: 160px;
-        }
-
-        #intro .image.avatar img {
-           width: 100%;
-           border-radius: 50%;
-           border: 2px solid rgba(255, 255, 255, 0.4);
+		/* Force circular, centered profile image in intro */
+       #intro .image.avatar {
+            display: block;
+            margin: 0 auto 2rem auto;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            overflow: hidden;
        }
+
+      #intro .image.avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+}
+
 
 
 	}
+
