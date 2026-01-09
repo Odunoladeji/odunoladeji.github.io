@@ -4690,13 +4690,16 @@ input, select, textarea {
 	}
 /* === Canva-style circular image frame === */
 		#intro .avatar-frame {
-  			width: 180px;
-  			height: 180px;
-  			margin: 0 auto 2rem auto;
+  			width: 220px;
+  			height: 220px;
+  			margin: 0 auto 1rem auto;
   			border-radius: 50%;
   			overflow: hidden;
+  			background: #fff;
+  			border: 2px solid rgba(255,255,255,0.5);
+  			box-shadow: 0 12px 30px rgba(0,0,0,0.25);
   			position: relative;
- 			background: rgba(255, 255, 255, 0.1); /* subtle frame */
+  			z-index: 10;
 		}
 
 		#intro .avatar-frame img {
@@ -4705,7 +4708,11 @@ input, select, textarea {
   			object-fit: cover;   /* THIS is the magic */
  			object-position: center;
   			display: block;
+			border-radius: 50%;
+  			position: relative;
+ 			 z-index: 20;
 		}
+
 
 
 
