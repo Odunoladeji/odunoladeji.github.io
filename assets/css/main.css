@@ -4686,7 +4686,9 @@ input, select, textarea {
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
-		/* === Canva-style circular image frame === */
+	
+	}
+/* === Canva-style circular image frame === */
 		#intro .avatar-frame {
   			width: 180px;
   			height: 180px;
@@ -4705,7 +4707,6 @@ input, select, textarea {
   			display: block;
 		}
 
-	}
 
 
 
