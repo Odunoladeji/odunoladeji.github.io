@@ -4686,23 +4686,25 @@ input, select, textarea {
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
-		/* Force circular, centered profile image in intro */
-       #intro .image.avatar {
-            display: block;
-            margin: 0 auto 2rem auto;
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            overflow: hidden;
-       }
+		/* === Canva-style circular image frame === */
+		#intro .avatar-frame {
+  			width: 180px;
+  			height: 180px;
+  			margin: 0 auto 2rem auto;
+  			border-radius: 50%;
+  			overflow: hidden;
+  			position: relative;
+ 			background: rgba(255, 255, 255, 0.1); /* subtle frame */
+		}
 
-      #intro .image.avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-}
-
-
+		#intro .avatar-frame img {
+  			width: 100%;
+  			height: 100%;
+  			object-fit: cover;   /* THIS is the magic */
+ 			object-position: center;
+  			display: block;
+		}
 
 	}
+
 
