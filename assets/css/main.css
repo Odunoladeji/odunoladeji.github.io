@@ -4720,7 +4720,7 @@ input, select, textarea {
   			justify-content: center;
   			align-items: center;
   			margin: 3rem 0 2rem 0;
-  			flex-wrap: wrap;
+  			gap: 2rem;
 		}
 
 		.edu-step {
@@ -4729,30 +4729,24 @@ input, select, textarea {
 		}
 
 		.edu-circle {
-  			width: 80px;
-  			height: 80px;
-  			margin: 0 auto 0.75rem auto;
+  			width: 90px;
+  			height: 90px;
+  			margin: 0 auto 1rem auto;
   			border-radius: 50%;
-  			background: rgba(255,255,255,0.1);
-  			border: 2px solid rgba(255,255,255,0.4);
+  			background: rgba(255,255,255,0.08);
+  			border: 2px solid rgba(255,255,255,0.5);
   			display: flex;
   			align-items: center;
   			justify-content: center;
-  			font-weight: bold;
-  			letter-spacing: 0.05em;
-		}
-
-		.edu-label {
-  			font-size: 0.85rem;
-  			line-height: 1.4;
-  			opacity: 0.85;
+  			font-weight: 700;
+  			letter-spacing: 0.08em;
+			font-size: 1.1rem;
 		}
 
 		.edu-line {
-  			width: 60px;
+  			width: 70px;
   			height: 2px;
-  			background: rgba(255,255,255,0.4);
-  			margin: 0 1rem;
+  			background: rgba(255,255,255,0.5);
 		}
 
 		/* Mobile stacking */
@@ -4764,9 +4758,9 @@ input, select, textarea {
   		.edu-line {
     			width: 2px;
     			height: 40px;
-    			margin: 1rem 0;
  		 }
 	}
+
 
 
 
