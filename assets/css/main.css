@@ -4625,7 +4625,7 @@ input, select, textarea {
 			width: 7rem;
 		}
 
-			#navPanel .close:before {
+			#navPanel .close: before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
 				display: inline-block;
@@ -4643,7 +4643,7 @@ input, select, textarea {
 				font-size: 1.25rem;
 			}
 
-			#navPanel .close:hover {
+			#navPanel .close: hover {
 				color: #212931;
 			}
 
@@ -4706,6 +4706,7 @@ input, select, textarea {
  			object-position: center;
   			display: block;
 		}
+
 
 
 
