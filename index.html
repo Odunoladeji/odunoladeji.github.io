@@ -1,345 +1,1055 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Odunola A. Oladeji | PhD candidate</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Odunola A. Oladeji is a PhD candidate researching climate, health, and well-being at GSSI, Italy. View publications, CV, and contact details.">
+  <meta name="theme-color" content="#2d5a3d" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <title>Odunola A. Oladeji | PhD Candidate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-	<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-				
-				<!-- Intro -->
-					<div id="intro">
-						<div class="intro-inner">
-							
-						<div class="avatar-block">
-      					 <div class="avatar-frame">
-                          <img src="images/Photo_Oladeji.jpg" alt="Odunola A. Oladeji" />
-      					 </div>
-                         <div class="avatar-caption">
-        					PhD Candidate · GSSI, L'Aquila
-     					 </div>
-    					</div>
-					 
-				 <div class="intro-text">
- 					 <h1>Odunola A. Oladeji</h1>
- 					 <p>
-   					   PhD Candidate in <strong>Regional Science & Economic Geography</strong><br />
-    				   Gran Sasso Science Institute (GSSI), Italy<br />
-   				 	   Research interests: Climate Change · Health & Well-being · Black Tax
- 				     </p>
-  				<ul class="actions">
-   				 <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
- 				 </ul>
-				 </div>
+    :root {
+      --ink:        #1a1a1a;
+      --ink-soft:   #4a4a4a;
+      --ink-muted:  #888;
+      --surface:    #f7f5f0;
+      --paper:      #fffffe;
+      --accent:     #2d5a3d;       /* deep forest green — geography/environment */
+      --accent-lt:  #e8f0ea;
+      --rule:       #ddd9d0;
+      --serif:      'Cormorant Garamond', Georgia, serif;
+      --sans:       'DM Sans', system-ui, sans-serif;
+      --mono:       'DM Mono', monospace;
+      --max:        1100px;
+      --gap:        clamp(1.5rem, 4vw, 3rem);
+    }
 
-              </div>
-             </div>
-				
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">About me</a>
-					</header>
+    html { scroll-behavior: smooth; color-scheme: light dark; }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
- 					 <li class="active"><a href="#intro">Home</a></li>
-  					 <li><a href="#about">About</a></li>
- 					 <li><a href="#publications">Publications</a></li>
-  					 <li><a href="#cv">CV</a></li>
-  					<li><a href="#contact">Contact</a></li>
-				</ul>
+    :root[data-theme="dark"] {
+      --surface:    #111111;
+      --paper:      #151515;
+      --ink:        #f5f5f2;
+      --ink-soft:   #d7d7d2;
+      --ink-muted:  #9a9a93;
+      --accent:     #8ebd6a;
+      --accent-lt:  #24331f;
+      --rule:       #2f3a34;
+      --background-image: none;
+    }
 
-						<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/odunolaoladeji/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-  					<li><a href="https://github.com/yourusername" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-  					<li><a href="https://scholar.google.com/..." class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
- 					 <li><a href="https://orcid.org/0000-0000-0000-0000" class="icon brands fa-orcid"><span class="label">ORCID</span></a></li>
-					</ul>
+    body {
+      font-family: var(--sans);
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--ink);
+      background: var(--surface);
+      background-image: radial-gradient(circle at 10% 10%, rgba(45,90,61,0.08) 0%, transparent 24%), radial-gradient(circle at 80% 18%, rgba(45,90,61,0.05) 0%, transparent 18%), radial-gradient(circle at 50% 100%, rgba(45,90,61,0.04) 0%, transparent 26%);
+    }
 
-					</nav>
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(247,245,240,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 var(--gap);
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-name {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: var(--ink-soft);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--accent); }
 
-				<!-- Main -->
-					<div id="main">
+    .nav-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      padding: 0.4rem;
+      color: var(--ink);
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+    }
+    .skip-link {
+      position: absolute;
+      left: 1rem;
+      top: -3rem;
+      padding: 0.75rem 1rem;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      border-radius: 2px;
+      transition: top 0.2s ease;
+      z-index: 200;
+    }
+    .skip-link:focus {
+      top: 1rem;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 1.3rem;
+      height: 2px;
+      margin: 0.18rem 0;
+      background: var(--ink);
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    .nav-toggle:focus-visible,
+    .nav-links a:focus-visible,
+    .btn:focus-visible,
+    .theme-toggle:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+    .nav-links.open {
+      display: flex;
+    }
+    .theme-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+      color: var(--ink);
+      padding: 0.5rem 0.75rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+      margin-left: 0.75rem;
+    }
+    .theme-toggle:hover {
+      background: var(--accent-lt);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .hero-text {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .hero-text.reveal-hidden {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    .reveal {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+      will-change: opacity, transform;
+    }
+    .reveal.reveal-hidden {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .hero-photo-frame {
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+    .hero-photo-frame:hover {
+      transform: translateY(-4px);
+    }
+    .btn {
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.2s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 24px rgba(0,0,0,0.08);
+    }
+    .pub-item {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .pub-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 30px rgba(0,0,0,0.05);
+    }
+    .nav-inner {
+      transition: background 0.2s ease, box-shadow 0.2s ease;
+    }
+    nav.scrolled {
+      background: rgba(247,245,240,0.98);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+    }
+    section {
+      scroll-margin-top: 90px;
+    }
 
-						<!-- Featured Post -->
-							<article class="post featured" id="about">
-  							 <header class="major">
-    						  <h2>About Me</h2>
-    						 <p>
-     						  I am a 4th year PhD candidate in <strong>Regional Science & Economic Geography</strong> at <strong>Gran Sasso Science Institute, L'Aquila, Italy</strong>.
-      						  I am all for social impact—researching the things that keep communities up, either in the day or at night. Like how extreme temperatures meddle with our well-being, or the trauma that comes with experiencing floods. 
-							  Combining numbers with narratives, my work is dedicated to building evidence at the critical intersection of environment, disaster, and health in Africa.
-							  When I’m not mapping those complex systems, I’m exploring the psychological dimensions of Black tax—a critical inroad to understanding intergenerational dynamics in the Black community.
-							  In case you have seen my contribution to development corporations, agri-food systems, and migration, it is all the same cause, driven by the same vision.
-                             </p>
-  						</header>
-					</article>
+    /* ── HERO ── */
+    #intro {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 80px var(--gap) var(--gap);
+      gap: 4rem;
+    }
+    .hero-text {}
+    .hero-eyebrow {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--accent);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 2rem;
+      height: 1px;
+      background: var(--accent);
+    }
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      font-weight: 300;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+    }
+    h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .hero-bio {
+      font-size: 1.05rem;
+      color: var(--ink-soft);
+      max-width: 44ch;
+      margin-bottom: 2rem;
+      line-height: 1.75;
+    }
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .tag {
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 0.3rem 0.8rem;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      color: var(--ink-soft);
+      background: var(--paper);
+      letter-spacing: 0.02em;
+    }
+    .hero-socials {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.4rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: all 0.2s;
+      letter-spacing: 0.03em;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover { background: #1e3f2b; }
+    .btn-outline {
+      border: 1px solid var(--rule);
+      color: var(--ink-soft);
+      background: var(--paper);
+    }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
-				</section>
+    .hero-photo-wrap {
+      position: relative;
+    }
+    .hero-photo-frame {
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+      margin-left: auto;
+      overflow: hidden;
+      border-radius: 2px;
+      box-shadow: 0 36px 80px rgba(0, 0, 0, 0.08);
+    }
+    .hero-photo-frame::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
+      pointer-events: none;
+      z-index: 2;
+    }
+    .hero-photo-frame::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(45,90,61,0.15));
+      opacity: 0.85;
+      pointer-events: none;
+      mix-blend-mode: soft-light;
+      z-index: 1;
+    }
+    .hero-photo {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+      position: relative;
+      z-index: 0;
+      filter: grayscale(7%) contrast(1.03);
+      transition: transform 0.5s ease;
+    }
+    .hero-photo-frame:hover .hero-photo {
+      transform: scale(1.02);
+    }
+    .hero-photo-badge {
+      position: absolute;
+      bottom: -1.2rem;
+      left: -1rem;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.9rem 1.2rem;
+      z-index: 3;
+      border-radius: 2px;
+      box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+      transform: translateZ(0);
+    }
+    .badge-inst {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+    .badge-year {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 300;
+      line-height: 1;
+      margin-top: 0.2rem;
+    }
 
-				<article id="cv">
-  				  <header>
-    				<h2>Curriculum Vitae</h2>
-    				<p>My academic trajectory at a glance</p>
- 				 </header>
+    /* ── SECTION SHELL ── */
+    section {
+      padding: clamp(3rem, 8vw, 6rem) var(--gap);
+    }
+    .section-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .section-label {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+    h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 2.5rem;
+    }
 
- 				 <div class="education-pathway">
+    /* ── ABOUT ── */
+    #about { background: var(--paper); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .about-body p {
+      color: var(--ink-soft);
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+    .about-body p:last-child { margin-bottom: 0; }
+    .stat-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--rule);
+      padding: 1.4rem;
+      border-radius: 2px;
+    }
+    .stat-card-num {
+      font-family: var(--serif);
+      font-size: 2.8rem;
+      font-weight: 300;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .stat-card-label {
+      font-size: 0.82rem;
+      color: var(--ink-muted);
+      margin-top: 0.3rem;
+      font-weight: 500;
+    }
 
-   				 <div class="edu-step">
-     				 <div class="edu-circle">BSc</div>
-      				<div class="edu-label">
-       				  <strong>Bachelor’s</strong><br>
-        			Agricultural Economics<br>
-        			University of Ibadan, Nigeria
-      				</div>
-   				 </div>
+    /* ── EDUCATION ── */
+    #cv { background: var(--surface); }
+    .edu-track {
+      position: relative;
+      padding-left: 2rem;
+    }
+    .edu-track::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 8px; bottom: 0;
+      width: 1px;
+      background: var(--rule);
+    }
+    .edu-item {
+      position: relative;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .edu-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .edu-item::before {
+      content: '';
+      position: absolute;
+      left: -2rem;
+      top: 8px;
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--surface);
+      outline: 1px solid var(--accent);
+    }
+    .edu-degree {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+    .edu-title {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.2rem;
+    }
+    .edu-inst {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+    }
+    .cv-download {
+      margin-top: 3rem;
+    }
 
-    		<div class="edu-line"></div>
+    /* ── PUBLICATIONS ── */
+    #publications { background: var(--paper); }
+    .pub-list { display: flex; flex-direction: column; gap: 0; }
+    .pub-item {
+      padding: 2rem 0;
+      border-bottom: 1px solid var(--rule);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+    .pub-item:first-child { border-top: 1px solid var(--rule); }
+    .pub-year {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      padding-top: 0.25rem;
+      width: 3.5rem;
+      flex-shrink: 0;
+    }
+    .pub-content {}
+    .pub-badge {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.5rem;
+      border-radius: 2px;
+      margin-bottom: 0.6rem;
+    }
+    .pub-badge.published {
+      background: var(--accent-lt);
+      color: var(--accent);
+    }
+    .pub-badge.working {
+      background: #f0ede6;
+      color: #7a6e5a;
+    }
+    .pub-title {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.4rem;
+      line-height: 1.4;
+    }
+    .pub-authors {
+      font-size: 0.85rem;
+      color: var(--ink-muted);
+      margin-bottom: 0.5rem;
+    }
+    .pub-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.7rem;
+    }
+    .kw {
+      font-size: 0.72rem;
+      color: var(--ink-muted);
+      border: 1px solid var(--rule);
+      padding: 0.15rem 0.5rem;
+      border-radius: 2px;
+    }
+    .pub-links {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 0.8rem;
+    }
+    .pub-link {
+      font-size: 0.8rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .pub-link:hover { border-color: var(--accent); }
 
-   				 <div class="edu-step">
-      				<div class="edu-circle">MSc</div>
-      				<div class="edu-label">
-        			<strong>Master’s</strong><br>
-       				European Interdisciplinary Master African Studies (EIMAS)<br>
-        			University of Bayreuth, Germany<br>
-					University of Porto, Portugal<br>
-					Bordeaux Montaigne University, France
-     				</div>
-    			</div>
+    /* ── CONTACT ── */
+    #contact { background: var(--surface); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .contact-intro {
+      font-size: 1.05rem;
+      color: var(--ink-soft);
+      margin-bottom: 2rem;
+    }
+    .contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .contact-list .cl-icon {
+      width: 36px; height: 36px;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      color: var(--accent);
+    }
+    .contact-list a {
+      color: var(--ink-soft);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .contact-list a:hover { color: var(--accent); }
+    .contact-affil {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--accent);
+      padding: 1.8rem;
+      border-radius: 2px;
+    }
+    .affil-label {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+    .affil-name {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .affil-detail {
+      font-size: 0.88rem;
+      color: var(--ink-muted);
+    }
 
-    		<div class="edu-line"></div>
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 1.5rem var(--gap);
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--ink-muted);
+    }
 
-    			<div class="edu-step">
-      			 <div class="edu-circle">PhD</div>
-     			  <div class="edu-label">
-        		<strong>PhD</strong><br>
-        		Regional Science & Economic Geography<br>
-        		Gran Sasso Science Institute, Italy
-     		 </div>
-    		</div>
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .nav-toggle { display: inline-flex; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 56px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: rgba(247,245,240,0.96);
+        padding: 1rem var(--gap);
+        border-bottom: 1px solid var(--rule);
+        box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links li { padding: 0.75rem 0; border-top: 1px solid var(--rule); }
+      .nav-links li:first-child { border-top: none; }
+      #intro { grid-template-columns: 1fr; min-height: auto; padding-top: 90px; }
+      .hero-photo-wrap { order: -1; }
+      .hero-photo-frame { max-width: 300px; margin: 0 auto; }
+      .hero-photo-badge { bottom: -1rem; left: -0.5rem; }
+      .about-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .pub-item { grid-template-columns: 1fr; gap: 0.5rem; }
+      .pub-year { width: auto; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
- 		 </div>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-name" href="#intro">Odunola A. Oladeji</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <button type="button" class="theme-toggle" aria-pressed="false" aria-label="Toggle light and dark mode">☾</button>
+      <ul id="primary-navigation" class="nav-links" aria-label="Primary navigation">
+        <li><a href="#about">About</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#publications">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  			<ul class="actions special">
-    		<li><a href="Latex/cv.pdf" class="button primary">Download CV (PDF)</a></li>
-  			</ul>
-		</article>
+  <main id="main">
 
-				<section class="posts" id="publications">
+  <!-- HERO -->
+  <section id="intro" class="reveal">
+    <div class="hero-text">
+      <div class="hero-eyebrow">PhD Candidate · GSSI, L'Aquila</div>
+      <h1>Where <em>data</em><br>meets lived<br>experience</h1>
+      <p class="hero-bio">
+        I study the intersections of climate, health, and community — producing evidence for the questions that keep Africa's most vulnerable populations up at night.
+      </p>
+      <div class="hero-tags">
+        <span class="tag">Climate Change</span>
+        <span class="tag">Health & Well-being</span>
+        <span class="tag">Economic Geography</span>
+        <span class="tag">Black Tax</span>
+      </div>
+      <div class="hero-socials">
+        <a class="btn btn-primary" href="https://scholar.google.com/citations?user=C5gk1pQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+          ↗ Google Scholar
+        </a>
+        <a class="btn btn-outline" href="files/cv.pdf" target="_blank" rel="noopener noreferrer">
+          Download CV
+        </a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/odunolaoladeji/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+        <a class="btn btn-outline" href="https://orcid.org/0000-0003-0238-6528" target="_blank" rel="noopener noreferrer">
+          ORCID
+        </a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-frame">
+        <img
+          class="hero-photo"
+          src="images/Photo_Oladeji.jpg"
+          alt="Odunola A. Oladeji"
+          onerror="this.style.background='#e8f0ea';this.style.minHeight='400px';"
+        />
+        <div class="hero-photo-badge">
+          <div class="badge-inst">GSSI · Italy</div>
+          <div class="badge-year">4th<br>Year</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-					<!-- Published Papers -->
-  					<article>
-   					 <header>
-     				   <h2>Published Papers</h2>
-    				</header>
+  <!-- ABOUT -->
+  <section id="about" class="reveal">
+    <div class="section-inner">
+      <div class="section-label">01 — About me</div>
+      <h2>Research at the edge<br>of environment & humanity</h2>
+      <div class="about-grid">
+        <div class="about-body">
+          <p>
+            I am a 4th year PhD candidate in Regional Science &amp; Economic Geography at the Gran Sasso Science Institute in L'Aquila, Italy. My work sits at the critical intersection of environment, disaster, and health in Africa — combining quantitative rigour with qualitative depth.
+          </p>
+          <p>
+            Extreme temperatures and mental health. Flood trauma and community resilience. The intergenerational financial burden known as Black tax. These are the questions I pursue — because they are the questions that matter most to the communities I study.
+          </p>
+          <p>
+            My background spans development corporations, agri-food systems, and migration research — all animated by the same vision: building evidence where it is most urgently needed.
+          </p>
+        </div>
+        <div class="stat-stack">
+          <div class="stat-card">
+            <div class="stat-card-num">7+</div>
+            <div class="stat-card-label">Working papers &amp; publications</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-num">3</div>
+            <div class="stat-card-label">Countries of academic training</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-num">
+              <span style="font-size:1.4rem">GSSI</span>
+            </div>
+            <div class="stat-card-label">Gran Sasso Science Institute, Italy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-   					 <p>
-     				  <strong></strong>O. A. Oladeji, I. Noy (2025).<br />
-      				  <em>Too Hot or Too Cold: Effect of Extreme Temperatures on Self-Reported Mental Health Outcomes in South Africa</em>.<br />
-    				  CESifo Working Paper No. 12083
-   					 </p>
+  <!-- CV / EDUCATION -->
+  <section id="cv" class="reveal">
+    <div class="section-inner">
+      <div class="section-label">02 — Academic trajectory</div>
+      <h2>Education</h2>
+      <div class="edu-track">
+        <div class="edu-item">
+          <div class="edu-degree">PhD · Ongoing</div>
+          <div class="edu-title">Regional Science &amp; Economic Geography</div>
+          <div class="edu-inst">Gran Sasso Science Institute (GSSI) · L'Aquila, Italy</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">MSc</div>
+          <div class="edu-title">European Interdisciplinary Master in African Studies (EIMAS)</div>
+          <div class="edu-inst">University of Bayreuth · University of Porto · Bordeaux Montaigne University</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">BSc</div>
+          <div class="edu-title">Agricultural Economics</div>
+          <div class="edu-inst">University of Ibadan · Nigeria</div>
+        </div>
+      </div>
+      <div class="cv-download">
+        <a class="btn btn-primary" href="files/cv.pdf" download="Odunola_Oladeji_CV.pdf">Download Full CV (PDF)</a>
+      </div>
+    </div>
+  </section>
 
-   					 <ul class="actions special">
-    			      <li><a href="http://dx.doi.org/10.2139/ssrn.5470248" class="button">DOI</a></li>
-   				 </ul>
- 				 </article>
-				</section>
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="reveal">
+    <div class="section-inner">
+      <div class="section-label">03 — Research output</div>
+      <h2>Papers &amp; Manuscripts</h2>
 
-  				<!-- Unpublished / Coursework -->
- 				<article id="unpublished">
- 					 <header>
-    				<h2>Unpublished manuscripts</h2>
- 					 </header>
+      <div class="pub-list">
 
-					 <div class = "paper-list">
+        <!-- Published -->
+        <div class="pub-item">
+          <div class="pub-year">2025</div>
+          <div class="pub-content">
+            <div class="pub-badge published">Working Paper</div>
+            <div class="pub-title">Too Hot or Too Cold: Effect of Extreme Temperatures on Self-Reported Mental Health Outcomes in South Africa</div>
+            <div class="pub-authors">O. A. Oladeji, I. Noy · CESifo Working Paper No. 12083</div>
+            <div class="pub-keywords">
+              <span class="kw">Extreme temperatures</span>
+              <span class="kw">Mental health</span>
+              <span class="kw">South Africa</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="http://dx.doi.org/10.2139/ssrn.5470248" target="_blank" rel="noopener noreferrer">DOI ↗</a>
+            </div>
+          </div>
+        </div>
 
-						 <div class = "paper">
-						 <p>
-						  <span class="year">2023</span>
-							Society and Economy: the making, the struggle, and the constitutive ‘worlds’ of realities of everyday economic life
-						      <p class="keywords">
-								Keywords: space . economy . performativity . economization . everyday life
-						 </p>
-							 <ul class="actions">
-								 <li>
-							 <a href="files/space.pdf" class="botton small">
-							Download PDF
-						   </a>
-						</li>
-						</ul>
-					 </p>
-				 </div>
-					
+        <!-- Unpublished -->
+        <div class="pub-item">
+          <div class="pub-year">2023</div>
+          <div class="pub-content">
+            <div class="pub-badge working">Unpublished</div>
+            <div class="pub-title">Society and Economy: the making, the struggle, and the constitutive 'worlds' of realities of everyday economic life</div>
+            <div class="pub-keywords">
+              <span class="kw">Space</span><span class="kw">Economy</span><span class="kw">Performativity</span><span class="kw">Everyday life</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="files/space.pdf" target="_blank">PDF ↗</a>
+            </div>
+          </div>
+        </div>
 
-                  <div class = "paper">
+        <div class="pub-item">
+          <div class="pub-year">2023</div>
+          <div class="pub-content">
+            <div class="pub-badge working">Unpublished</div>
+            <div class="pub-title">The Multifaceted Left-Behind Issue</div>
+            <div class="pub-keywords">
+              <span class="kw">Left-behind</span><span class="kw">Political economy</span><span class="kw">Inequality</span><span class="kw">Development</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="files/Leftbehind.pdf" target="_blank">PDF ↗</a>
+            </div>
+          </div>
+        </div>
 
-						 <p>
-						  <span class="year">2023</span>
-						The Multifaceted Left-Behind Issue
-						 <p class="keywords">
-						 Keywords: left-behind . political economy . economic convergence . inequality . development
-						 </p>
-					           <ul class="actions">
-								 <li>
-							 <a href="files/Leftbehind.pdf" class="botton small">
-						       Download PDF
-						   </a>
-						</li>
-						</ul>
-					 </p>
-				 </div>
+        <div class="pub-item">
+          <div class="pub-year">2023</div>
+          <div class="pub-content">
+            <div class="pub-badge working">Unpublished</div>
+            <div class="pub-title">(Un)even development narrative: Globalization, economic integration and the fall of transport and communication costs</div>
+            <div class="pub-keywords">
+              <span class="kw">Uneven development</span><span class="kw">Globalization</span><span class="kw">Economic geography</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="files/Uneven.pdf" target="_blank">PDF ↗</a>
+            </div>
+          </div>
+        </div>
 
-				 <div class = "paper">
+        <div class="pub-item">
+          <div class="pub-year">2021</div>
+          <div class="pub-content">
+            <div class="pub-badge working">Unpublished</div>
+            <div class="pub-title">The Geopolitics of Charcoal Production and Consumption in Nigeria: Energy or Climate?</div>
+            <div class="pub-keywords">
+              <span class="kw">Charcoal</span><span class="kw">Nigeria</span><span class="kw">Climate change</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="files/Charcoal.pdf" target="_blank">PDF ↗</a>
+            </div>
+          </div>
+        </div>
 
-						 <p>
-						  <span class="year">2023</span>
-						(Un)even development narrative: Globalization, economic integration and the fall of transport and communication costs
-						 <p class="keywords">
-					        Keywords: uneven development . globalization . economic integration . economnic geography
-				         </p>
-						<ul class="actions">
-						 <li> 
-							 <a href="files/Uneven.pdf" class="botton small">
-					           Download PDF
-						   </a>
-						</li>
-						</ul>
-					 </p>
-				 </div>
-					 
-					  <div class = "paper">
+        <div class="pub-item">
+          <div class="pub-year">2021</div>
+          <div class="pub-content">
+            <div class="pub-badge working">Unpublished</div>
+            <div class="pub-title">A critique of COVID-19 lockdown measures in African countries: The price of universal copying and mass pasting</div>
+            <div class="pub-keywords">
+              <span class="kw">COVID-19</span><span class="kw">Africa</span><span class="kw">Lockdown</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="files/covid.pdf" target="_blank">PDF ↗</a>
+            </div>
+          </div>
+        </div>
 
-						 <p>
-						  <span class="year">2021</span>
-						The Geopolitics of Charcoal Production and Consumption in Nigeria: Energy or Climate?
-						<p class="keywords">
-					      Keywords: charcoal production . Nigeria . charcoal geopolitics . climate change . charcoal consumption
-				        </p>
-						<ul class="actions">
-								 <li> 
-							 <a href="files/Charcoal.pdf" class="botton small">
-						       Download PDF
-						   </a>
-						</li>
-						</ul>
-					 </p>
-				 </div>
-      			  
-					 <div class = "paper">
+        <div class="pub-item">
+          <div class="pub-year">2021</div>
+          <div class="pub-content">
+            <div class="pub-badge working">Unpublished</div>
+            <div class="pub-title">Two Brotherhoods in the Same Neighborhood: Muslim-Christian Relations among the Yorubas in Southwest Nigeria</div>
+            <div class="pub-keywords">
+              <span class="kw">Religion</span><span class="kw">Yoruba</span><span class="kw">Lived religion</span><span class="kw">Nigeria</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="files/Religion.pdf" target="_blank">PDF ↗</a>
+            </div>
+          </div>
+        </div>
 
-						 <p>
-						  <span class="year">2021</span>
-						A critique of COVID-19 lockdown measures in African countries: The price of universal copying and mass pasting
-						 <p class="keywords">
-					       Keywords: COVID-19 pandemic . coronavirus . Africa . lockdown
-				       </p>
-						 <ul class="actions">
-							<li>
-							 <a href="files/covid.pdf" class="botton small">
-						       Download PDF
-						   </a>
-						</li>
-						</ul>
-					 </p>
-				 </div>
-      			 
-				 <div class = "paper">
+        <div class="pub-item">
+          <div class="pub-year">2021</div>
+          <div class="pub-content">
+            <div class="pub-badge working">Unpublished</div>
+            <div class="pub-title">Western Education and the fate of Sociocultural Reproduction in Sub-Saharan Africa: A reflection on the Yorubas in Southwestern Nigeria</div>
+            <div class="pub-keywords">
+              <span class="kw">Education</span><span class="kw">Indigenous knowledge</span><span class="kw">Sub-Saharan Africa</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="files/Education.pdf" target="_blank">PDF ↗</a>
+            </div>
+          </div>
+        </div>
 
-						 <p>
-						  <span class="year">2021</span>
-						Two Brotherhoods in the Same Neighborhood: Muslim-Christian Relations among the Yorubas in Southwest Nigeria
-						 <p class="keywords">
-					       Keywords: Muslim-Christian relations . lived religion . Southwestern Yorubaland . Yorubas . Abrahamic religions . religion-culture tradeoff
-				       </p>
-						<ul class="actions">
-						 <li>	 
-							 <a href="files/Religion.pdf" class="botton small">
-					           Download PDF
-						   </a>
-						</li>
-						</ul>
-					 </p>
-				 </div>
+      </div>
+    </div>
+  </section>
 
-				 <div class = "paper">
+  <!-- CONTACT -->
+  <section id="contact" class="reveal">
+    <div class="section-inner">
+      <div class="section-label">04 — Get in touch</div>
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p class="contact-intro">
+            I welcome collaboration, invitations to present, and discussions about my research. Feel free to reach out.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <span class="cl-icon">✉</span>
+              <a href="mailto:odunola.oladeji@gssi.it">odunola.oladeji@gssi.it</a>
+            </li>
+            <li>
+              <span class="cl-icon">in</span>
+              <a href="https://www.linkedin.com/in/odunolaoladeji/" target="_blank" rel="noopener noreferrer">linkedin.com/in/odunolaoladeji</a>
+            </li>
+            <li>
+              <span class="cl-icon">GS</span>
+              <a href="https://scholar.google.com/citations?user=C5gk1pQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar profile</a>
+            </li>
+            <li>
+              <span class="cl-icon" style="font-size:0.65rem">ORC</span>
+              <a href="https://orcid.org/0000-0003-0238-6528" target="_blank" rel="noopener noreferrer">0000-0003-0238-6528</a>
+            </li>
+            <li>
+              <span class="cl-icon">GH</span>
+              <a href="https://github.com/Odunoladeji" target="_blank" rel="noopener noreferrer">github.com/Odunoladeji</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-affil">
+          <div class="affil-label">Current Affiliation</div>
+          <div class="affil-name">Gran Sasso Science Institute</div>
+          <div class="affil-detail">Department of Regional Science &amp; Economic Geography<br>L'Aquila, Italy</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
 
-						 <p>
-						  <span class="year">2021</span>
-						Western Education and the fate of Sociocultural Reproduction in Sub-Saharan Africa: A reflection on the Yorubas in Southwestern Nigeria
-						 <p class="keywords">
-					        Keywords: sociocultural reproduction . indigenous knowledge . linguistic hegemony . sub-Saharan Africa
-				         </p>	
-					<ul class="actions">
-					 <li>
-					 <a href="files/Education.pdf" class="botton small">
-						Download PDF
-					 </a>
-				   </li>
-				</ul>
-			 </p>
-			 </div>
-		</div>
-		</article>
-					 
-       <footer id="footer">
-         <section id="contact">
-             <h3>Contact</h3>
-            <p>
-              Email: odunola.oladeji@gssi.it<br />
-              GitHub: <a href="https://github.com/Odunoladeji">Odunoladeji</a><br />
-              Google Scholar: <a href="https://scholar.google.com/citations?user=C5gk1pQAAAAJ&hl=en">Profile</a><br />
-              ORCID: 0000-0003-0238-6528
-            </p>
-        </section>
-      </footer>
+  <footer>
+    <span>© 2025 Odunola A. Oladeji</span>
+    <span>GSSI · L'Aquila, Italy</span>
+  </footer>
 
-						
-					
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Odunola Oladeji</li>
-					</div>
+  <script>
+    const nav = document.querySelector('nav');
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const themeToggle = document.querySelector('.theme-toggle');
+    const root = document.documentElement;
+    const revealElements = [...document.querySelectorAll('section.reveal'), document.querySelector('.hero-text')].filter(Boolean);
 
-			</div>
+    const applyTheme = theme => {
+      root.dataset.theme = theme;
+      themeToggle?.setAttribute('aria-pressed', String(theme === 'dark'));
+      themeToggle.textContent = theme === 'dark' ? '☀' : '☾';
+      localStorage.setItem('theme', theme);
+    };
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    const preferredTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    applyTheme(preferredTheme);
 
-	</body>
+    themeToggle?.addEventListener('click', () => {
+      const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      applyTheme(nextTheme);
+    });
 
+    navToggle?.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('reveal-hidden');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    revealElements.forEach(el => {
+      el.classList.add('reveal-hidden');
+      revealObserver.observe(el);
+    });
+
+    const handleNavScroll = () => {
+      if (window.scrollY > 24) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    };
+
+    window.addEventListener('scroll', handleNavScroll, { passive: true });
+    handleNavScroll();
+
+  </script>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
