@@ -493,11 +493,40 @@
       font-size: 0.9rem;
       color: var(--ink-soft);
     }
-    .edu-note {
-      margin-top: 0.55rem;
-      font-size: 0.85rem;
+    .edu-highlight {
+      margin-top: 0.8rem;
+      padding: 0.9rem 1rem;
+      border: 1px solid var(--accent-lt);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      background: linear-gradient(90deg, var(--accent-lt), transparent);
+    }
+    .edu-highlight-label {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
       color: var(--accent);
+      font-weight: 600;
+    }
+    .edu-highlight-meta {
+      margin-top: 0.35rem;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--ink);
       line-height: 1.6;
+    }
+    .edu-link {
+      display: inline-block;
+      margin-top: 0.45rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .edu-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
     }
     .cv-download {
       margin-top: 3rem;
@@ -808,7 +837,11 @@
           <div class="edu-degree">PhD · Ongoing</div>
           <div class="edu-title">Regional Science &amp; Economic Geography</div>
           <div class="edu-inst">Gran Sasso Science Institute (GSSI) · L'Aquila, Italy</div>
-          <div class="edu-note">Research exchange, Jan–Jun 2026 · Charité – Universitätsmedizin Berlin</div>
+          <div class="edu-highlight">
+            <div class="edu-highlight-label">Visiting Researcher</div>
+            <div class="edu-highlight-meta">Jan–Jun 2026 · Charité – Universitätsmedizin Berlin</div>
+            <a class="edu-link" href="#cv">Part of my ongoing PhD education in Regional Science &amp; Economic Geography</a>
+          </div>
         </div>
         <div class="edu-item">
           <div class="edu-degree">MSc</div>
