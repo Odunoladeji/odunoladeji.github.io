@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://odunoladeji.github.io/sitemap.xml
